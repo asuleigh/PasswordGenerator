@@ -22,10 +22,10 @@
       <h2 style="color:rgb(53, 53, 53)">Generate a Password</h2>
       <hr>
       <form style="height: 150px; border: dashed 3px rgb(197, 221, 241);">
-        <input type="text" name="secureinput" placeholder="Your Secure Password" style="padding-top: 5px; width: 100%; overflow: hidden; text-align: center; border: 0px white;">
+        <input type="text" id="passwordInput" name="secureinput" placeholder="Your Secure Password" style="padding-top: 5px; width: 100%; overflow: hidden; text-align: center; border: 0px white;">
       </form>
       <hr>
-        <input type="submit" onclick="passwordGen()" style="margin-left: 15px;" value="Generate Password"><input type="submit" style="float: right; margin-right: 15px;" value="Copy to Clipboard">
+        <input type="submit" onclick="passwordGen()" style="margin-left: 15px;" value="Generate Password"><input type="submit" onclick="copyToClipboard()" style="float: right; margin-right: 15px;" value="Copy to Clipboard">
       <br>
       <br>
     </div>
