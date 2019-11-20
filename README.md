@@ -17,6 +17,8 @@ i: INSTALLATION -In order to clone or download website for functionality on loca
 
 -Clone or download style.css to the "css" folder and script.js to the "script" folder
 
+-NOTE: In the current version, the css file is unecessary but is kept as a placeholder for possible future work
+
 ii: USAGE -Layout is as it appears. Click the "Generate Password" button to prompt a series of questions that ask
 for the desired parameters of the password. NOTE: The password must be between 8 and 128 characters long. Once
 navigating through the prompt, the password should appear in the box. Hit the Copy to Clipboard button to copy the generated password.
