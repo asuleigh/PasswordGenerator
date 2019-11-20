@@ -8,7 +8,7 @@
 
 <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/style/style.css" />
+    <link rel="stylesheet" href="./Assets/style/style.css"/>
     <title>Password Generator</title>
 </head>
 
@@ -27,19 +27,20 @@
       <form style="height: 150px; border: dashed 3px rgb(197, 221, 241);">
 <!-- Output for Password Generation -->
         <textarea class="form-control text-center" id="passwordInput" rows="3" placeholder="Your Secure Password" style=" color:rgb(53, 53, 53); border: 0px white;"></textarea>
-        
       </form>
       <hr>
+
 <!-- Generate Password and Copy to Clipboard Buttons/Changed Copy to Clipboard color to be initially blue instead of grey (like homework ex) so that it would show up-->
-        <input class="btn btn-danger" type="submit" onclick="passwordGen()" style="margin-left: 15px;" value="Generate Password"><input class="btn btn-info" type="submit" onclick="copyToClipboard()" style="float: right; margin-right: 15px;" value="Copy to Clipboard">
+        <input class="col-sm-3 btn btn-danger rounded-pill" type="submit" onclick="passwordGen()" style="margin: auto; padding: 10px;" value="Generate Password">
+        <input class="col-sm-3 btn btn-info rounded-pill" id="copyToClip" type="button" onclick="copyToClipboard()" style="float: right; margin: auto; padding: 10px;" value="Copy to Clipboard">
       <br>
       <br>
     </div>
 
 <!-- Links to Script -->
-<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="Assets/script/script.js" type="text/javascript"></script>
 
 </body>

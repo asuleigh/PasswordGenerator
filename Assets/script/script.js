@@ -21,8 +21,7 @@ function passwordGen() {
         var numberChoices = confirm("Do you want numbers?");
     }
 
-
-    // Create empty array and use ifs to append future randomized symbols/numbers/etc into array
+    // Create empty array and use ifs to append future randomized symbols/numbers/letters into array
     var arr = [];
 
     if (specialChars) {
@@ -57,6 +56,7 @@ function passwordGen() {
     
     // Pushes generated password to replace placeholder in textarea in HTML
     document.getElementById("passwordInput").innerHTML = passwordPush;
+
 }
 
 
@@ -72,8 +72,16 @@ function copyToClipboard() {
 
 
 
-// PLEASE IGNORE: Old reference code
-/* var passwordGen = {
+// PLEASE IGNORE: Future Code and Old Reference Code
+
+/*  Create var for extra style functioning Copy to Clipboard button (CANNOT GET TO WORK)
+    var copyClip = document.getElementById("CopyToClip");
+
+    Style Copy to Clipboard button and enable button when password has been generated
+    copyClip.className = "btn btn-lg btn-danger round";
+    copyClip.removeAttribute("disabled");
+
+ var passwordGen = {
     characterNumber: function () {
         alert("How many characters would you like your password to contain?");
     },
@@ -105,4 +113,5 @@ function copyToClipboard() {
  } 
  
  HTML Throwouts:
- <!-- <input type="text" id="passwordInput" name="secureinput" placeholder="Your Secure Password" style="padding-top: 5px; width: 100%; overflow: hidden; text-align: center; border: 0px white;"> -->*/
+ <!-- <input type="text" id="passwordInput" name="secureinput" placeholder="Your Secure Password" style="padding-top: 5px; width: 100%; overflow: hidden; text-align: center; border: 0px white;"> -->
+ */
