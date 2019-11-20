@@ -1,9 +1,7 @@
-# PasswordGenerator
+# Password Generator
 Link: https://asuleigh.github.io/PasswordGenerator/
 
 Screenshot: https://github.com/asuleigh/PasswordGenerator/blob/master/Assets/images/Screenshot.png
-
-Amanda Surber's Password Generator README
 
 ABSTRACT: This is a random password generator. Useful for generating and copying unique random passwords using simple javaScript.
 
