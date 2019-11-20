@@ -16,9 +16,9 @@ function passwordGen() {
     //prompts for other desired password attributes if initial prompt passes
     else {
         var specialChars = confirm("Do you want special characters?");
-        var numbers = confirm("Do you want numbers?");
-        var lowerCase = confirm("Do you want lower case letters?");
-        var upperCase = confirm("Do you want uppercase letters?");
+        var numberChoices = confirm("Do you want numbers?");
+        var lowerCaseChoices = confirm("Do you want lower case letters?");
+        var upperCaseChoices = confirm("Do you want uppercase letters?");
     }
 
 
@@ -27,23 +27,38 @@ function passwordGen() {
 
 
     if (specialChars) {
-        arr.push(symbolChoices);
+        arr.push(symbols);
     }
-    if (numbers) {
-        arr.push(numberChoices);
+    if (numberChoices) {
+        arr.push(numbers);
     }
-    if (lowerCase) {
-        arr.push(lowerCaseChoices);
+    if (lowerCaseChoices) {
+        arr.push(lowercase);
     }
-    if (upperCase) {
-        arr.push(upperCaseChoices);
+    if (upperCaseChoices) {
+        arr.push(uppercase);
     }
 
     var passwordPush = "";
+
+    for (i = 0; i < characterNumber; i++) {
+        
+        var array = Math.floor(Math.random() * arr.length);
+
+        var setLength = arr[array].length;
+
+        var chooseChars = Math.floor(Math.random() * setLength);
+
+        var randomizedChars = arr[array][chooseChars];
+
+        passwordPush += randomizedChars;
+    }
     
-   
+    document.getElementById("passwordInput").innerHTML = passwordPush;
 }
 
+
+//Copies generated password to clipboard
 function copyToClipboard() {
     var copy = document.getElementById("passwordInput");
     copy.select();
