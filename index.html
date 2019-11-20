@@ -12,21 +12,25 @@
     <title>Password Generator</title>
 </head>
 
+<!-- HTML Body-->
 <body style="background-color: aliceblue;">
 
+<!-- Heading -->
     <header style="padding: 10px; background-color: aliceblue; text-align: center;">
         <h1 style="color:rgb(53, 53, 53);">Password Generator</h1>
     </header>
 
+<!-- Container for Password Generator Form-->
     <div class="container shadow-sm p3 mb5 bg-white rounded" style="align-content: center; background-color: white; margin-bottom: 20px;">
       <h2 style="color:rgb(53, 53, 53)">Generate a Password</h2>
       <hr>
       <form style="height: 150px; border: dashed 3px rgb(197, 221, 241);">
-        <textarea class="form-control text-center" id="passwordInput" placeholder="Your Secure Password" style="border: 0px white;">
-        </textarea>
-        <!-- <input type="text" id="passwordInput" name="secureinput" placeholder="Your Secure Password" style="padding-top: 5px; width: 100%; overflow: hidden; text-align: center; border: 0px white;"> -->
+<!-- Output for Password Generation -->
+        <textarea class="form-control text-center" id="passwordInput" rows="3" placeholder="Your Secure Password" style=" color:rgb(53, 53, 53); border: 0px white;"></textarea>
+        
       </form>
       <hr>
+<!-- Generate Password and Copy to Clipboard Buttons-->
         <input type="submit" onclick="passwordGen()" style="margin-left: 15px;" value="Generate Password"><input type="submit" onclick="copyToClipboard()" style="float: right; margin-right: 15px;" value="Copy to Clipboard">
       <br>
       <br>

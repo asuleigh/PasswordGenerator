@@ -102,4 +102,7 @@ function copyToClipboard() {
          password += all.substring(character, character + 1);
      }
      return password;
- } */
+ } 
+ 
+ HTML Throwouts:
+ <!-- <input type="text" id="passwordInput" name="secureinput" placeholder="Your Secure Password" style="padding-top: 5px; width: 100%; overflow: hidden; text-align: center; border: 0px white;"> -->*/
