@@ -1,7 +1,7 @@
 # PasswordGenerator
 Link: https://asuleigh.github.io/PasswordGenerator/
 
-Screenshot: located in /Assets/images.Screenshot.png
+Screenshot: https://github.com/asuleigh/PasswordGenerator/blob/master/Assets/images/Screenshot.png
 
 Amanda Surber's Password Generator README
 
