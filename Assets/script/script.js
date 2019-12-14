@@ -7,7 +7,7 @@ var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 // Function for generating password
 function passwordGen() {
     // Prompt for password length
-    var characterNumber = prompt("How many characters would you like your password to contain?")
+    var characterNumber = prompt("How many characters would you like your password to contain? \n(Must be between 8 and 128)")
 
     if (characterNumber < 8 || characterNumber > 128) {
         alert("Password must be no shorter than 8 and no longer than 128 characters")
