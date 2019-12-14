@@ -23,7 +23,7 @@ ii: USAGE -Layout is as it appears. Click the "Generate Password" button to prom
 for the desired parameters of the password. NOTE: The password must be between 8 and 128 characters long. Once
 navigating through the prompt, the password should appear in the box. Hit the Copy to Clipboard button to copy the generated password.
 
-iii: CREDITS -https://w3schools.com -https://getbootstrap.com/ -https://code.jquery.com
+iii: CREDITS -https://w3schools.com -https://getbootstrap.com/ -https://code.jquery.com -https://www.w3schools.com/howto/howto_js_copy_clipboard.asp -https://hackernoon.com/copying-text-to-clipboard-with-javascript-df4d4988697f -https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange
 
 iv: LICENSE GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 

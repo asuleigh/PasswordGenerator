@@ -62,11 +62,15 @@ function passwordGen() {
 
 // Copies generated password to clipboard
 function copyToClipboard() {
-    var copy = document.getElementById("passwordInput");
-    copy.select();
-    copy.setSelectionRange(0, 99999);
+    // Creates variable for copy that gets password input from HTML, selects input
+    var copyPass = document.getElementById("passwordInput");
+    copyPass.select();
+    // Sets a range for the input (https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange)
+    copyPass.setSelectionRange(0, 99999);
+    // Copies the contents of the input to the clipboard
     document.execCommand("copy");
-    alert("Your password: '" + copy.value + "' has been copied to your clipboard!");
+    // Alert lets user know that their passowrd has been copied to their clipboard
+    alert("Your password: '" + copyPass.value + "' has been copied to your clipboard!");
 }
 
 
